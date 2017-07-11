@@ -1,0 +1,114 @@
+<hr>
+<h1>Welcome to JimBiffany</h1>
+<hr>
+
+    {% comment %}
+
+    {% endcomment %}
+{% schema %}
+  {
+    "name": "Jim Biffany",
+    "class": "index-section index-section--flush",
+
+    "settings": [
+      {
+        "type": "text",
+        "id": "jbtext",
+        "label": "JB Text",
+        "default": "Here is some default text"
+      },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text overlay"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+      },
+      {
+        "type": "select",
+        "id": "hero_size",
+        "label": "Section height",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Extra Small",
+            "value": "x-small"
+          },
+          {
+            "label": "Small",
+            "value": "small"
+          },
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          },
+          {
+            "label": "Extra Large",
+            "value": "x-large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "JimBiffany",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
