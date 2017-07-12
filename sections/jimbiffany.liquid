@@ -1,10 +1,23 @@
 <hr>
-<h1>JimBiffany</h1>
+<h1>Doug - {{section.settings.title}}</h1>
+
+{% comment %}
+  {{section.settings.label}}
+  {{section.settings.text}}
+  {{section.settings.hero_size}}
+  {{section.settings.text_size}}
+  {{section.settings.button_label}}
+  {{section.settings.button_link}}
+{% endcomment %}
+
+
+
+<form action="{{section.settings.button_link}}">
+  <span>{{section.settings.text}}</span>
+  <input type="submit" value="{{section.settings.button_label}}"/>
+</form>
 <hr>
 
-    {% comment %}
-
-    {% endcomment %}
 {% schema %}
   {
     "name": "Jim Biffany",
@@ -107,7 +120,7 @@
     "presets": [
       {
         "name": "JimBiffany",
-        "category": "Image"
+        "category": "Text Thingy"
       }
     ]
   }
